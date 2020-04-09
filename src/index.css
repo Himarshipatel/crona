@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.stats-card {
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.stats-card .name {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.stats-card .count {
+  font-size: 1.25rem;
+}
+.title{
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
