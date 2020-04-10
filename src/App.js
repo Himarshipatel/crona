@@ -6,17 +6,19 @@ import {Provider} from 'react-redux';
 import {PersistGate} from 'redux-persist/integration/react';
 import {store,persistore} from './store';
 //import {CountriesTable} from '../../components';
+
  const App = () => {
-    return (
-<Provider store={store}>
-  <PersistGate persistor={persistore}>
-<BrowserRouter>
-       <Switch>
-           <Route path="/" component={Home} exact /> 
-       </Switch>
-       </BrowserRouter>
-       </PersistGate>
-       </Provider>
-    );
+   
+   return (
+    <Provider store={store}>
+    <PersistGate persistor={persistore}>
+    <BrowserRouter>
+          <Switch>
+                <Route path="/" component={Home} exact /> 
+          </Switch>
+    </BrowserRouter>
+    </PersistGate>
+    </Provider>
+  );
 };
 export default App;

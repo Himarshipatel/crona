@@ -3,12 +3,14 @@ const initialState = {
     error: false,
     message: null,
     stats: null,
+
     countries: {
       loading: false,
       error: false,
       message: null,
       stats: null,
     },
+
     state: {
       loading: false,
       error: false,
@@ -72,5 +74,4 @@ const initialState = {
         return { ...state };
     }
   };
-  
-  export default HomeReducers;
+export default HomeReducers;

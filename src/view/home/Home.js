@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchStats } from "./action";
 import { StatsCard, CountriesTable,CountryMap} from "../../components";
-import { Container, Row } from "reactstrap";
+//import { Container, Row } from "reactstrap";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -11,16 +11,16 @@ const Home = () => {
     stats: state.HomeReducers.stats,
   }));
 
-  useEffect(() => {
-    dispatch(fetchStats());
+useEffect(() => {
+  dispatch(fetchStats());
   }, [dispatch]);
 
   return (
     <>
       {loading ? (
         <div>loading....</div>
-      ) : (
-        <>
+          ) : (
+          <>
           {/* {stats !== null && (
             // <Row className="mt-5">
             //   <StatsCard name="Cases" stats={stats.cases} />

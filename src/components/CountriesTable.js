@@ -8,9 +8,9 @@ const CountriesTable = () => {
   const { loading, stats } = useSelector((state) => ({
     loading: state.HomeReducers.countries.loading,
     stats: state.HomeReducers.countries.stats,
-  }));
+ }));
 
-  useEffect(() => {
+useEffect(() => {
     dispatch(fetchCounries());
   }, [dispatch]);
 
@@ -18,7 +18,7 @@ const CountriesTable = () => {
     <>
       {loading ? (
         <div>loading....</div>
-      ) : (
+        ) : (
         <>
           {stats !== null && (
             <Table>
@@ -47,5 +47,4 @@ const CountriesTable = () => {
     </>
   );
 };
-
 export default CountriesTable;
